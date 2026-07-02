@@ -212,6 +212,34 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
 /* CONCEPTO LINES */
 .c-line{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--ff-display);font-weight:300;font-style:italic;font-size:clamp(1.6rem,3.4vw,2.6rem);color:var(--hueso);opacity:0;transition:opacity 1.5s ease;max-width:30ch;width:100%;text-align:center;padding:0 1rem}
 
+/* NAMING SYSTEM */
+.nm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.nm-grid>div{background:var(--carbon);padding:clamp(1.4rem,2.5vw,2.2rem)}
+.nm-name{font-family:var(--ff-display);font-size:clamp(1.6rem,3vw,2.4rem);color:var(--roca);line-height:1;margin-bottom:.7rem}
+.nm-var{font-size:.65rem;letter-spacing:.26em;text-transform:uppercase;color:var(--piedra);margin-bottom:.5rem}
+.nm-gesto{font-family:var(--ff-display);font-style:italic;font-size:clamp(.9rem,1.4vw,1.1rem);color:var(--hueso);line-height:1.3}
+@media(max-width:720px){.nm-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.nm-grid{grid-template-columns:1fr}}
+
+.pk-row{padding:clamp(1.6rem,3vw,2.5rem) 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:minmax(160px,1fr) 2fr;gap:clamp(1.5rem,4vw,3rem);align-items:start}
+.pk-row:first-child{border-top:1px solid var(--line)}
+.pk-left .pk-name{font-family:var(--ff-display);font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--roca);line-height:1}
+.pk-left .pk-prefix{font-family:var(--ff-display);font-size:clamp(1rem,2vw,1.4rem);letter-spacing:.08em;text-transform:uppercase;color:var(--piedra);margin-bottom:.15rem;font-weight:400}
+.pk-right .pk-force{font-family:var(--ff-display);font-style:italic;font-size:clamp(1rem,1.6vw,1.2rem);color:var(--hueso);line-height:1.3;margin-bottom:.4rem}
+.pk-right .pk-def{font-size:var(--fs-sm);color:var(--hueso-dim);line-height:1.6;max-width:48ch}
+.pk-right .pk-var{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--piedra);margin-top:.6rem}
+@media(max-width:600px){.pk-row{grid-template-columns:1fr;gap:.6rem}}
+
+.arch{display:grid;grid-template-columns:1fr auto 1fr;gap:0;max-width:860px;margin:0 auto}
+.arch-col{padding:clamp(1.2rem,2.5vw,2rem)}
+.arch-col h3{font-family:var(--ff-display);font-size:clamp(1.4rem,2.6vw,1.9rem);color:var(--hueso);margin-bottom:.3rem;font-weight:400}
+.arch-col .arch-sub{font-size:.65rem;letter-spacing:.24em;text-transform:uppercase;color:var(--roca);margin-bottom:clamp(1.2rem,2vw,1.8rem)}
+.arch-col ul{list-style:none}
+.arch-col li{padding:clamp(.6rem,1vw,.8rem) 0;border-bottom:1px solid var(--line);font-family:var(--ff-display);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:400;color:var(--hueso)}
+.arch-col li span{color:var(--piedra);font-style:italic;font-size:.82em;margin-left:.5em}
+.arch-div{width:1px;background:var(--line);align-self:stretch}
+@media(max-width:600px){.arch{grid-template-columns:1fr;gap:clamp(2rem,4vw,3rem)}.arch-div{width:100%;height:1px}}
+
 /* REDUCED MOTION */
 @media(prefers-reduced-motion:reduce){
   .r{opacity:1!important;transform:none!important;transition:none!important}
@@ -570,6 +598,75 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
   </div>
 </section>
 
+<!-- ═══════════════════════════════════════════ -->
+<!-- SISTEMA DE NOMBRES                         -->
+<!-- ═══════════════════════════════════════════ -->
+
+<!-- NAMING — intro -->
+<section aria-labelledby="naming-h" class="s--surface2">
+  <div class="wrap">
+    <div class="acto r"><span class="n">·</span> Sistema de nombres</div>
+    <h2 id="naming-h" class="h-xl r d1">Dos colecciones.<br>Dos formas de nombrar<br>la tierra.</h2>
+    <p class="body r d2" style="margin-top:2rem;font-size:clamp(1.1rem,1.8vw,1.35rem)">Los nombres no describen los vinos. Nombran lo que la tierra hace con cada variedad. En <strong>Colección Origen</strong>, la tierra es el sujeto que actúa. En <strong>Centuria de Angastaco</strong>, las fuerzas que tallaron el viñedo durante un siglo se vuelven nombre.</p>
+  </div>
+</section>
+
+<!-- NAMING — Colección Origen -->
+<section>
+  <div class="wrap">
+    <div class="acto r"><span class="n">·</span> Colección Origen · Cafayate</div>
+
+    <div class="pk-row r d1">
+      <div class="pk-left">
+        <div class="pk-prefix">La tierra sostiene</div>
+        <div class="pk-name">Sustento</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">Lo que nutre y permite que todo se eleve</div>
+        <div class="pk-def">La base reconocible, el vino más elegido, el que une origen, mesa y pertenencia. Fruta negra, cuerpo, potencia amable.</div>
+        <div class="pk-var">Malbec</div>
+      </div>
+    </div>
+
+    <div class="pk-row r d2">
+      <div class="pk-left">
+        <div class="pk-prefix">La tierra habla bajo</div>
+        <div class="pk-name">Murmurio</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">La voz mínima que no grita y se queda</div>
+        <div class="pk-def">Elegante, herbal, fino. Frescura, tensión y carácter silencioso. Una presencia que no entra con fuerza: aparece en capas.</div>
+        <div class="pk-var">Cabernet Franc</div>
+      </div>
+    </div>
+
+    <div class="pk-row r d3">
+      <div class="pk-left">
+        <div class="pk-prefix">La tierra exige</div>
+        <div class="pk-name">Brega</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">El esfuerzo y el carácter, sin decirlo</div>
+        <div class="pk-def">Intenso, estructurado, oscuro. La vid creciendo en una zona exigente, entre altura, sequedad, viento y resistencia.</div>
+        <div class="pk-var">Tannat</div>
+      </div>
+    </div>
+
+    <div class="pk-row r d4">
+      <div class="pk-left">
+        <div class="pk-prefix">La tierra ilumina</div>
+        <div class="pk-name">Albor</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">El primer gesto de luz en tierra áspera</div>
+        <div class="pk-def">Blanco aromático, floral, luminoso, muy identitario del norte. El comienzo de la luz: algo delicado que nace y se eleva.</div>
+        <div class="pk-var">Torrontés</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- SUSTENTO -->
 <section class="wine-full s--surface2">
   <div class="wrap r">
@@ -635,6 +732,121 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
     <p class="def r d3" style="margin:0 auto">Término científico para el organismo que persistió de otra era, rodeado de un mundo que ya no es el suyo. No es una metáfora para estas viñas: es su definición exacta.</p>
   </div>
 </section>
+
+<!-- NAMING — Centuria de Angastaco intro -->
+<section class="s--surface2">
+  <div class="wrap">
+    <div class="label r" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">Centuria de Angastaco · Viñedos centenarios</div>
+    <h2 class="h-lg r d1">Las cinco fuerzas<br>del terroir.</h2>
+    <p class="body r d2" style="margin-top:1.5rem;font-size:clamp(1.1rem,1.8vw,1.35rem)">Cien años bajo el sol de Angastaco. Cinco variedades que sobrevivieron donde muchas desaparecieron. Cada nombre nace de la fuerza que las talló: el tiempo, el origen, la luz, la tierra, el fuego.</p>
+    <p class="lead r d3" style="margin-top:2.5rem"><span class="accent">Pachak</span> — <em>"cien" en quechua</em> — unifica la colección y ancla cada vino en su historia centenaria.</p>
+  </div>
+</section>
+
+<!-- NAMING — Los 5 Pachak -->
+<section>
+  <div class="wrap">
+    <div class="acto r"><span class="n">·</span> El significado detrás de cada nombre</div>
+
+    <div class="pk-row r d1">
+      <div class="pk-left">
+        <div class="pk-prefix">Pachak</div>
+        <div class="pk-name">Relicto</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">El tiempo</div>
+        <div class="pk-def">Lo que sobrevivió al paso del tiempo. Un testimonio vivo de otra época. La variedad más rara y escasa del viñedo: un organismo que persistió de otra era.</div>
+        <div class="pk-var">Albilla Seca</div>
+      </div>
+    </div>
+
+    <div class="pk-row r d2">
+      <div class="pk-left">
+        <div class="pk-prefix">Pachak</div>
+        <div class="pk-name">Estirpe</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">El origen</div>
+        <div class="pk-def">El linaje. La memoria genética y cultural de una variedad originaria. Criolla es la variedad patrimonial por excelencia: habla de herencia americana.</div>
+        <div class="pk-var">Criolla</div>
+      </div>
+    </div>
+
+    <div class="pk-row r d3">
+      <div class="pk-left">
+        <div class="pk-prefix">Pachak</div>
+        <div class="pk-name">Fulgor</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">La luz</div>
+        <div class="pk-def">El resplandor. La luz intensa que parece salir de la propia tierra. La altura de Angastaco potencia su perfume, frescura y luminosidad.</div>
+        <div class="pk-var">Torrontés</div>
+      </div>
+    </div>
+
+    <div class="pk-row r d4">
+      <div class="pk-left">
+        <div class="pk-prefix">Pachak</div>
+        <div class="pk-name">Légamo</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">La tierra</div>
+        <div class="pk-def">La tierra fértil formada durante siglos por los sedimentos de los ríos. Historia convertida en suelo. Donde el tiempo deja su riqueza.</div>
+        <div class="pk-var">Albilla Dulce</div>
+      </div>
+    </div>
+
+    <div class="pk-row r d5">
+      <div class="pk-left">
+        <div class="pk-prefix">Pachak</div>
+        <div class="pk-name">Ígnea</div>
+      </div>
+      <div class="pk-right">
+        <div class="pk-force">El fuego</div>
+        <div class="pk-def">La energía nacida del fuego y del subsuelo. La fuerza mineral que permanece viva. Reservada para la expresión más extrema del terroir.</div>
+        <div class="pk-var">Edición especial · Futura</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NAMING — Arquitectura completa -->
+<section class="s--glow-center">
+  <div class="wrap">
+    <div class="acto r"><span class="n">·</span> Arquitectura de marca</div>
+    <h2 class="h-lg r d1" style="text-align:center;margin-bottom:clamp(2.5rem,5vw,4rem)">Un relato con dos capítulos.</h2>
+
+    <div class="arch">
+      <div class="arch-col r d2">
+        <h3>Colección Origen</h3>
+        <div class="arch-sub">Cafayate · La tierra como sujeto</div>
+        <ul>
+          <li>Sustento <span>Malbec</span></li>
+          <li>Murmurio <span>Cab. Franc</span></li>
+          <li>Brega <span>Tannat</span></li>
+          <li>Albor <span>Torrontés</span></li>
+        </ul>
+      </div>
+      <div class="arch-div" aria-hidden="true"></div>
+      <div class="arch-col r d3">
+        <h3>Centuria de Angastaco</h3>
+        <div class="arch-sub">Pachak · Las cinco fuerzas</div>
+        <ul>
+          <li>Pachak Relicto <span>Albilla Seca</span></li>
+          <li>Pachak Estirpe <span>Criolla</span></li>
+          <li>Pachak Fulgor <span>Torrontés</span></li>
+          <li>Pachak Légamo <span>Albilla Dulce</span></li>
+          <li>Pachak Ígnea <span>Ed. especial</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="lead r d4" style="margin-top:clamp(3rem,5vw,4rem);text-align:center;max-width:28ch;margin-left:auto;margin-right:auto">Origen habla en presente.<br>Centuria habla en geológico.</p>
+  </div>
+</section>
+
+<div class="puente"><p class="r">No es un portfolio de vinos.<br>Es un relato con capítulos.</p></div>
 
 <!-- ACTO 6 — EL CAMINO -->
 <section aria-labelledby="act06" style="position:relative">
