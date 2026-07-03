@@ -137,7 +137,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
 /* RELICTO */
 .stat{font-family:var(--ff-display);font-size:var(--fs-stat);font-weight:300;line-height:.9;color:var(--roca)}
 .stat-sub{font-size:clamp(.85rem,1.4vw,1.05rem);letter-spacing:.34em;text-transform:uppercase;color:var(--hueso);margin-top:clamp(1rem,2vw,1.4rem)}
-.relicto-name{font-family:var(--ff-display);font-size:clamp(3rem,10vw,7rem);font-weight:400;letter-spacing:.06em;color:var(--roca)}
+.relicto-name{font-family:var(--ff-display);font-size:clamp(2rem,7vw,5rem);font-weight:400;letter-spacing:.06em;color:var(--roca)}
 .def{font-family:var(--ff-display);font-style:italic;font-size:clamp(1.2rem,2.4vw,1.7rem);color:var(--hueso);max-width:42ch;line-height:1.4}
 
 /* AMBICIÓN GRID */
@@ -228,6 +228,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
 .pk-right .pk-force{font-family:var(--ff-display);font-style:italic;font-size:clamp(1rem,1.6vw,1.2rem);color:var(--hueso);line-height:1.3;margin-bottom:.4rem}
 .pk-right .pk-def{font-size:var(--fs-sm);color:var(--hueso-dim);line-height:1.6;max-width:48ch}
 .pk-right .pk-var{font-size:.6rem;letter-spacing:.22em;text-transform:uppercase;color:var(--piedra);margin-top:.6rem}
+.pk-right .pk-gloss{font-size:clamp(.7rem,1vw,.78rem);color:var(--hueso-dim);opacity:.6;margin-top:.8rem;line-height:1.5;font-style:italic}
 @media(max-width:600px){.pk-row{grid-template-columns:1fr;gap:.6rem}}
 
 .arch{display:grid;grid-template-columns:1fr auto 1fr;gap:0;max-width:860px;margin:0 auto}
@@ -626,6 +627,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
         <div class="pk-force">Lo que nutre y permite que todo se eleve</div>
         <div class="pk-def">La base reconocible, el vino más elegido, el que une origen, mesa y pertenencia. Fruta negra, cuerpo, potencia amable.</div>
         <div class="pk-var">Malbec</div>
+        <div class="pk-gloss">*Sustento es el conjunto de medios o recursos necesarios para asegurar la subsistencia y el bienestar.</div>
       </div>
     </div>
 
@@ -638,6 +640,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
         <div class="pk-force">La voz mínima que no grita y se queda</div>
         <div class="pk-def">Elegante, herbal, fino. Frescura, tensión y carácter silencioso. Una presencia que no entra con fuerza: aparece en capas.</div>
         <div class="pk-var">Cabernet Franc</div>
+        <div class="pk-gloss">*Murmurio es un ruido continuo, suave y confuso causado por voces que se mezclan a lo lejos, el viento, el agua o las hojas de los árboles.</div>
       </div>
     </div>
 
@@ -650,6 +653,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
         <div class="pk-force">El esfuerzo y el carácter, sin decirlo</div>
         <div class="pk-def">Intenso, estructurado, oscuro. La vid creciendo en una zona exigente, entre altura, sequedad, viento y resistencia.</div>
         <div class="pk-var">Tannat</div>
+        <div class="pk-gloss">*Brega es la lucha, el esfuerzo intenso, el trabajo duro o una situación complicada.</div>
       </div>
     </div>
 
@@ -661,7 +665,8 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
       <div class="pk-right">
         <div class="pk-force">El primer gesto de luz en tierra áspera</div>
         <div class="pk-def">Blanco aromático, floral, luminoso, muy identitario del norte. El comienzo de la luz: algo delicado que nace y se eleva.</div>
-        <div class="pk-var">Torrontés</div>
+        <div class="pk-var">Torrontés y Criolla</div>
+        <div class="pk-gloss">*Albor es una palabra que se utiliza con el significado de comienzo o principio de algo.</div>
       </div>
     </div>
 
@@ -705,7 +710,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
 <section class="wine-full">
   <div class="wrap r">
     <div class="idx">Colección Origen · IV de IV</div>
-    <div class="grape">Torrontés · La tierra ilumina</div>
+    <div class="grape">Torrontés y Criolla · La tierra ilumina</div>
     <div class="gesto">el primer gesto de luz en tierra áspera</div>
     <div class="wname">Albor</div>
     <p class="why">Blanco aromático, floral, luminoso, muy identitario del norte. El comienzo de la luz: algo delicado que nace y se eleva.</p>
@@ -722,15 +727,15 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
     <div class="acto r" style="color:var(--hueso)"><span class="n" style="color:var(--hueso)">·</span> El viñedo antiguo de Angastaco</div>
     <div class="stat r d1" style="color:var(--hueso)">+100</div>
     <div class="stat-sub r d2">años creciendo solas · sin pesticidas · sin intervención</div>
-    <p class="body r d3" style="margin-top:3rem;font-size:clamp(1.1rem,1.8vw,1.35rem);color:var(--hueso)">Viñas de Torrontés que llevan más de un siglo en el mismo suelo. Nadie las diseñó. Nadie las cuidó con un plan. El mundo cambió alrededor y ellas no se movieron.</p>
+    <p class="body r d3" style="margin-top:3rem;font-size:clamp(1.1rem,1.8vw,1.35rem);color:var(--hueso)">Viñas de Torrontés y Criolla que llevan más de un siglo en el mismo suelo. Nadie las diseñó. Nadie las cuidó con un plan. El mundo cambió alrededor y ellas no se movieron.</p>
   </div>
 </section>
 
 <section class="s--relicto s--center">
   <div class="wrap">
     <p class="lead r">Un viñedo único<br>merece un nombre único.</p>
-    <div class="relicto-name r d2" style="margin:3rem 0" id="relicto-h">Relicto</div>
-    <p class="def r d3" style="margin:0 auto">Término científico para el organismo que persistió de otra era, rodeado de un mundo que ya no es el suyo. No es una metáfora para estas viñas: es su definición exacta.</p>
+    <div class="relicto-name r d2" style="margin:3rem 0" id="relicto-h">Centuria de Angastaco</div>
+    <p class="def r d3" style="margin:0 auto">Tres variedades, cinco etiquetas. Cada nombre nace de la fuerza que las talló: el tiempo, el origen, la luz, la tierra, el fuego.</p>
   </div>
 </section>
 
@@ -740,7 +745,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
     <div class="label r" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">Centuria de Angastaco · Viñedos centenarios</div>
     <h2 class="h-lg r d1">Las cinco fuerzas<br>del terroir.</h2>
     <p class="body r d2" style="margin-top:1.5rem;font-size:clamp(1.1rem,1.8vw,1.35rem)">Cien años bajo el sol de Angastaco. Cinco variedades que sobrevivieron donde muchas desaparecieron. Cada nombre nace de la fuerza que las talló: el tiempo, el origen, la luz, la tierra, el fuego.</p>
-    <p class="lead r d3" style="margin-top:2.5rem"><span class="accent">Pachak</span> — <em>"cien" en quechua</em> — unifica la colección y ancla cada vino en su historia centenaria.</p>
+    <p class="lead r d3" style="margin-top:2.5rem"><span class="accent">Pachak</span> — <em>"cien" en quechua</em> — unifica la colección y ancla cada vino en su historia milenaria.</p>
   </div>
 </section>
 
@@ -756,7 +761,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
       </div>
       <div class="pk-right">
         <div class="pk-force">El tiempo</div>
-        <div class="pk-def">Lo que sobrevivió al paso del tiempo. Un testimonio vivo de otra época. La variedad más rara y escasa del viñedo: un organismo que persistió de otra era.</div>
+        <div class="pk-def">Organismo que persistió de otra era, rodeado de otro mundo que ya no es el suyo.</div>
         <div class="pk-var">Albilla Seca</div>
       </div>
     </div>
@@ -764,36 +769,36 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
     <div class="pk-row r d2">
       <div class="pk-left">
         <div class="pk-prefix">Pachak</div>
-        <div class="pk-name">Estirpe</div>
+        <div class="pk-name">Vestigio</div>
       </div>
       <div class="pk-right">
-        <div class="pk-force">El origen</div>
-        <div class="pk-def">El linaje. La memoria genética y cultural de una variedad originaria. Criolla es la variedad patrimonial por excelencia: habla de herencia americana.</div>
-        <div class="pk-var">Criolla</div>
+        <div class="pk-force">La tierra</div>
+        <div class="pk-def">Lo que permanece después del paso del tiempo. La tierra tiene su propio ritmo, y en él, la vid permanece más tiempo hasta revelar su expresión más dulce.</div>
+        <div class="pk-var">Albilla Dulce</div>
       </div>
     </div>
 
     <div class="pk-row r d3">
       <div class="pk-left">
         <div class="pk-prefix">Pachak</div>
-        <div class="pk-name">Fulgor</div>
+        <div class="pk-name">Estirpe</div>
       </div>
       <div class="pk-right">
-        <div class="pk-force">La luz</div>
-        <div class="pk-def">El resplandor. La luz intensa que parece salir de la propia tierra. La altura de Angastaco potencia su perfume, frescura y luminosidad.</div>
-        <div class="pk-var">Torrontés</div>
+        <div class="pk-force">El origen</div>
+        <div class="pk-def">Linaje, sangre, origen.</div>
+        <div class="pk-var">Criolla</div>
       </div>
     </div>
 
     <div class="pk-row r d4">
       <div class="pk-left">
         <div class="pk-prefix">Pachak</div>
-        <div class="pk-name">Légamo</div>
+        <div class="pk-name">Fulgor</div>
       </div>
       <div class="pk-right">
-        <div class="pk-force">La tierra</div>
-        <div class="pk-def">La tierra fértil formada durante siglos por los sedimentos de los ríos. Historia convertida en suelo. Donde el tiempo deja su riqueza.</div>
-        <div class="pk-var">Albilla Dulce</div>
+        <div class="pk-force">La luz</div>
+        <div class="pk-def">Brillo, resplandor o luminosidad muy intensa que despide un cuerpo.</div>
+        <div class="pk-var">Torrontés</div>
       </div>
     </div>
 
@@ -804,7 +809,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
       </div>
       <div class="pk-right">
         <div class="pk-force">El fuego</div>
-        <div class="pk-def">La energía nacida del fuego y del subsuelo. La fuerza mineral que permanece viva. Reservada para la expresión más extrema del terroir.</div>
+        <div class="pk-def">Lo volcánico, lo que viene del subsuelo y no se apaga.</div>
         <div class="pk-var">Edición especial · Futura</div>
       </div>
     </div>
@@ -826,7 +831,7 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
           <li>Sustento <span>Malbec</span></li>
           <li>Murmurio <span>Cab. Franc</span></li>
           <li>Brega <span>Tannat</span></li>
-          <li>Albor <span>Torrontés</span></li>
+          <li>Albor <span>Torrontés y Criolla</span></li>
         </ul>
       </div>
       <div class="arch-div" aria-hidden="true"></div>
@@ -835,15 +840,15 @@ section{min-height:100svh;padding:clamp(4rem,14vh,10rem) clamp(1.5rem,7vw,4rem);
         <div class="arch-sub">Pachak · Las cinco fuerzas</div>
         <ul>
           <li>Pachak Relicto <span>Albilla Seca</span></li>
+          <li>Pachak Vestigio <span>Albilla Dulce</span></li>
           <li>Pachak Estirpe <span>Criolla</span></li>
           <li>Pachak Fulgor <span>Torrontés</span></li>
-          <li>Pachak Légamo <span>Albilla Dulce</span></li>
           <li>Pachak Ígnea <span>Ed. especial</span></li>
         </ul>
       </div>
     </div>
 
-    <p class="lead r d4" style="margin-top:clamp(3rem,5vw,4rem);text-align:center;max-width:28ch;margin-left:auto;margin-right:auto">Origen habla en presente.<br>Centuria habla en geológico.</p>
+    <p class="lead r d4" style="margin-top:clamp(3rem,5vw,4rem);text-align:center;max-width:28ch;margin-left:auto;margin-right:auto">Origen habla del presente.<br>Centuria habla de permanencia.</p>
   </div>
 </section>
 
